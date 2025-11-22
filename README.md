@@ -11,10 +11,10 @@ make && make install
 # Usage
 
 ```
-> merge-gpx --help
-merge-gpx --help
+> gpxutil --help
+gpxutil --help
                                                                                                                        
- Usage: merge-gpx [OPTIONS] FILES...                                                                                   
+ Usage: gpxutil [OPTIONS] FILES...                                                                                   
                                                                                                                        
 ╭─ Arguments ─────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ *    files      FILES...  [required]                                                                                │

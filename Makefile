@@ -12,4 +12,4 @@ build:
 	uv build
 
 install:
-	pipx install dist/merge_gpx-0.1.0-py3-none-any.whl
+	pipx install dist/gpxutil-*.whl

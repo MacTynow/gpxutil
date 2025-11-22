@@ -1,5 +1,5 @@
 [project]
-name = "merge-gpx"
+name = "gpxutil"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -7,18 +7,21 @@ requires-python = ">=3.13"
 dependencies = [
     "gpxpy>=1.6.2",
     "prython>=0.0.2.1",
-    "pytest>=9.0.1",
     "python-multipart>=0.0.20",
     "rich-progress>=0.4.0",
-    "setuptools>=80.9.0",
     "typer>=0.20.0",
-    "wheel>=0.45.1",
 ]
 
 [build-system]
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[dependency-groups]
+dev = [
+    "pytest>=9.0.1",
+    "setuptools>=80.9.0",
+    "wheel>=0.45.1",
+]
 
 [project.scripts]
-merge-gpx = "merge_gpx.main:app"
+gpxutil = "gpxutil.cli:app"

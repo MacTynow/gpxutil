@@ -2,7 +2,7 @@ import hashlib
 import os
 from typer.testing import CliRunner
 
-from ..merge_gpx.main import app
+from ..gpxutil.cli import app
 
 runner = CliRunner()
 test_data_path = os.getcwd() + "/tests/test_data/"

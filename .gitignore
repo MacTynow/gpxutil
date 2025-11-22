@@ -15,3 +15,4 @@ tests/test_data/
 handlers/
 infra
 .pytest_cache/
+.DS_Store

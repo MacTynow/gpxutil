@@ -33,6 +33,41 @@ wheels = [
 ]
 
 [[package]]
+name = "gpxutil"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "gpxpy" },
+    { name = "prython" },
+    { name = "python-multipart" },
+    { name = "rich-progress" },
+    { name = "typer" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+    { name = "setuptools" },
+    { name = "wheel" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "gpxpy", specifier = ">=1.6.2" },
+    { name = "prython", specifier = ">=0.0.2.1" },
+    { name = "python-multipart", specifier = ">=0.0.20" },
+    { name = "rich-progress", specifier = ">=0.4.0" },
+    { name = "typer", specifier = ">=0.20.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pytest", specifier = ">=9.0.1" },
+    { name = "setuptools", specifier = ">=80.9.0" },
+    { name = "wheel", specifier = ">=0.45.1" },
+]
+
+[[package]]
 name = "iniconfig"
 version = "2.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -60,33 +95,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d6/54/cfe61301667036ec958cb99bd3efefba235e65cdeb9c84d24a8293ba1d90/mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba", size = 8729, upload-time = "2022-08-14T12:40:10.846Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8", size = 9979, upload-time = "2022-08-14T12:40:09.779Z" },
-]
-
-[[package]]
-name = "merge-gpx"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "gpxpy" },
-    { name = "prython" },
-    { name = "pytest" },
-    { name = "python-multipart" },
-    { name = "rich-progress" },
-    { name = "setuptools" },
-    { name = "typer" },
-    { name = "wheel" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "gpxpy", specifier = ">=1.6.2" },
-    { name = "prython", specifier = ">=0.0.2.1" },
-    { name = "pytest", specifier = ">=9.0.1" },
-    { name = "python-multipart", specifier = ">=0.0.20" },
-    { name = "rich-progress", specifier = ">=0.4.0" },
-    { name = "setuptools", specifier = ">=80.9.0" },
-    { name = "typer", specifier = ">=0.20.0" },
-    { name = "wheel", specifier = ">=0.45.1" },
 ]
 
 [[package]]
