@@ -12,4 +12,4 @@ build:
 	uv build
 
 install:
-	pipx install dist/gpxutil-*.whl
+	pipx install dist/gpxutil-0.2.0*.whl --force

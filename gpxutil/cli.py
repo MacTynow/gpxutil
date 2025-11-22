@@ -6,7 +6,12 @@ from typing_extensions import Annotated
 
 app = typer.Typer()
 
-@app.command("merge")
+@app.command()
+def version():
+  print("v0.2.0")
+
+
+@app.command()
 def merge(files: list[str],
           output: Annotated[str, typer.Option("--output", "-o", help="Output file path")] = f"{os.getcwd()}/merged.gpx"
 ):
